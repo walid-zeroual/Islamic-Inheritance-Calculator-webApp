@@ -30,12 +30,18 @@ $wifeShare = ($nbSons == 0 && $nbDaughters == 0) ? round($inheritance, 2) : $wif
 
 $inheritance -= $wifeShare;
 
-$sonShare = $nbSons == 0 ? 0 : (($nbSons * 2) / (($nbSons * 2) + $nbDaughters));
-$sonsShare = round($inheritance * $sonShare , 2);
+if($nbSons > 0) {
+    $sonShare = $nbSons == 0 ? 0 : (($nbSons * 2) / (($nbSons * 2) + $nbDaughters));
+    $sonsShare = round($inheritance * $sonShare , 2);
 
-$inheritance -= $inheritance * $sonShare;
+    $inheritance -= $inheritance * $sonShare;
 
-$daughterShare = round($inheritance, 2);
+    $daughterShare = round($inheritance, 2);
+}
+else {
+    $sonsShare = 0;
+    $daughterShare = $nbDaughters == 1 ? round($inheritance / 2, 2) : round(2 * $inheritance / 3, 2);
+}
 
 $eachWife = $nbWives == 0 ? 0 : round($wifeShare / $nbWives, 2);
 $eachSon = $nbSons == 0 ? 0 : round($sonsShare / $nbSons, 2);
