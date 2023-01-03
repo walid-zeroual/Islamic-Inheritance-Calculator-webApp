@@ -1,7 +1,7 @@
 # Islamic-Inheritance-Calculator-WebAPP
 A simple open source inheritance calculator according to the Islamic law. The calculator only takes the case where the  deceased is a man possibly leaving behind wives, sons or daughters.
 
-- This program is free software.
+# This program is free software.
 - It is licensed under the GNU GPL version 3 or later.
 - That means you are free to use this program for any purpose;
 - free to study and modify this program to suit your needs;
