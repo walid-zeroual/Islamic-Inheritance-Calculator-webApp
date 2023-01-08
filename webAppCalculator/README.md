@@ -1,4 +1,5 @@
 This is the open source code for the islamic inheritance web application, visit [Inheritance Calculator](https://educateplus.000webhostapp.com/Inheritance/index.html) to try out.
+Or download the folder and test it on your local server with "http://localhost/webAppCalculator/index.html"
 # This program is free software.
 - It is licensed under the GNU GPL version 3 or later.
 - That means you are free to use this program for any purpose;
